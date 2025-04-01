@@ -35,7 +35,7 @@ Basic tags
 
 <html>: The root element that contains all other HTML elements on the page.
 
-<head>: Contains metadata about the document, such as the title, and stylesheet link or scripts and  meta tags.
+<head>: Contains metadata about the document, such as the title, and stylesheet link or scripts and meta tags.
 
 <title>: Defines the title of the webpage, which appears in the browser tab.
 
@@ -47,8 +47,7 @@ Basic tags
 
 <style>: Defines CSS for styling the page.
 
-<body>: Contains the main content of the webpage, including text, images, audio, video and 
-        other elements.
+<body>: Contains the main content of the webpage, including text, images, audio, video and other elements.
 
 
 meta tags
@@ -135,7 +134,7 @@ HTML Elements
 
    <img src='' width='' height='' alt='' title=''/>
 
-  - The <img> tag is used to display images on a web page. It is a self-closing tag, which means it  doesn't have a closing tag.
+  - The <img> tag is used to display images on a web page. It is a self-closing tag, which means it doesn't have a closing tag.
   - It is inline block element, It takes only required space for image. we can give custom width and height to image.
   - Html attributes are the properties of html element and it is used to give extra information about element to the browser. Every attribute will be in the key value pair.
        
@@ -277,7 +276,7 @@ The only currently relevant value of target is _blank. The other values of targe
 8) <hr>
    ====
 
-   The <hr> tag in HTML stands for horizontal rule and is used to insert a horizontal rule to divide or     separate document sections. The <hr> tag is an empty tag, and it does not require an end tag.
+   The <hr> tag in HTML stands for horizontal rule and is used to insert a horizontal rule to divide or separate document sections. The <hr> tag is an empty tag, and it does not require an end tag.
 
    Attributes
    ----------
@@ -293,7 +292,7 @@ The only currently relevant value of target is _blank. The other values of targe
    ==============
 
   - The <center> HTML element is a block-level element that displays its block-level or inline contents centered horizontally within its containing element.
-  - This tag is not supported in HTML5. CSS’s property is used to set the alignment of the element  instead of the center tag in HTML5.
+  - This tag is not supported in HTML5. CSS’s property is used to set the alignment of the element instead of the center tag in HTML5.
 
 
 10) HTML entities 
@@ -334,3 +333,496 @@ The only currently relevant value of target is _blank. The other values of targe
   - <div>This is a block-level container.</div>
 
   - <span>This is an inline container.</span>
+
+
+
+13) Formatting Elements
+    ===================
+
+  
+  Formatting elements were designed to display special types of text with css styles:
+
+  Bold text: <b> or <strong>
+  --------------------------
+
+  HTML5 provides two tags to make text bold: <b> and <strong>.
+  Both tags have the same effect of making the enclosed text bold, but <strong> is preferred because it indicates that the text is important for semantic purposes.
+
+  Italicized text: <i> or <em>
+  ----------------------------
+
+  HTML5 provides two tags to make text italic: <i> and <em>. Both tags have the same effect of making the enclosed text italic, but <em> is preferred because it indicates that the text has emphasis for semantic purposes.
+
+  Strike-through text: <del> or <s>
+  ---------------------------------
+
+  HTML5 provides two tags to make text strike-through: <s> and <del>. Both tags have the same effect of making the enclosed text strike-through, but <del> is preferred because it indicates that the text has been deleted for semantic purposes.
+
+  Superscript and subscript text: <sup> or <sub>
+  ----------------------------------------------
+
+  HTML5 provides two tags to make text superscript and subscript: <sup> and <sub>, respectively.
+
+  u and ins
+  ---------
+  HTML5 provides two tags u and ins. Both tags have the same effect of making underline.
+  <ins> is used for semantic purpose. The <ins> tags means content inserted after it was first published. The <u> tag is simply for underlining and has no meaning.
+
+  small vs big
+  ------------
+  In HTML, the <small> tag is used to emphasize small text or information that is of secondary significance, such as copyright and legal disclaimer.
+  The <small> tag can be used to mark up a copyright notice or license agreement.
+  HTML <big> tag was used to increase the text font size one level bigger than the document's base font size.
+
+
+  <b> - Bold text
+  <strong> - Important text
+
+  <i> - Italic text
+  <em> - Emphasized text
+
+  <mark> - Highlighted Text
+
+  <s>  - text strick
+  <del> - Deleted text
+
+  <u> - Underline text
+  <ins> - Inserted text
+
+  <sub> - Subscript text
+  <sup> - Superscript text
+
+  <big> tag - Big Text
+  <small> - Smaller text
+
+
+
+14) Table elements
+    ==============
+
+  <table>	- Defines a table
+  <caption>     - Defines a table caption
+  <thead>	- Groups the header content in a table
+  <tbody>	- Groups the body content in a table
+  <tfoot>	- Groups the footer content in a table
+  <tr>	        - Defines a row in a table (rows)
+  <th>	        - Defines a header cell in a table (columns)
+  <td>	        - Defines a data cell in a table (columns)
+  
+   Attributes:
+   ----------
+  1)
+
+   border = '1' | '5' | '10' => if we use border then no need of frame and rules.    
+   frame = box | border | above | below | hsides | vsides | lhs | rhs 
+   rules = all | rows | cols | groups (between cells / groups)
+
+  2)
+
+   width => It will effect the table header & table body & table footer. 
+   height => It will give effect only to table body but not effect the table header(thead) & (tfoot) footer.
+
+  3)
+
+   cellspacing => It gives space between all cells.
+   cellpadding => It gives space with in cells.
+
+  4) 
+
+   colspan => merging columns in specific row. 
+   rowspan => merging rows in specific column.
+
+  5) 
+
+   text-align (align) => text align horizontally. (left|center|right)
+   vertical-align (valign) => text align vertically. (top|middle|bottom)
+
+
+  6) 
+
+   bgcolor => bg color to table.
+
+  
+   horizontal alignment (text in table)
+   ------------------------------------
+
+   The text-align property sets the horizontal alignment (like left, right, or center) of the content in <th> or <td>.
+
+   By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned.
+
+   vertical alignment (text in table)
+   ----------------------------------
+
+   The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
+
+   By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
+
+   The align="center" attribute centers the text horizontally.
+   The valign="middle" attribute centers the text vertically.
+
+Important Note
+--------------
+
+These attributes (align and valign) are deprecated in HTML5 and should not be used in modern web development. Instead, it's recommended to use CSS for such styling:
+
+th, td {
+           
+            text-align: center; /* horizontal alignment */
+            vertical-align: middle; /* vertical alignment */
+           
+        }
+
+
+
+15) Form element
+    ============
+
+Form element is used to take input from an user to send data to server and then db.
+The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+Form Elemenets:
+---------------
+
+The HTML <form> element can contain one or more of the following form elements.
+
+  <form>	=> Defines an HTML form for user input.
+  <input>	=> <input> element can be displayed in many ways, depending on the type attribute.
+  <label>	=> Defines a label for an <input> element.
+                   The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+  <textarea>	=> Defines a multiline input control (text area).
+                   The <textarea> element is often used in a form, to collect user inputs like comments or reviews.
+                   The size of a text area is specified by the cols and rows attributes.
+  <button>	=> Defines a clickable button.
+
+  <fieldset>	=> Groups related elements in a form.
+  <legend>	=> Defines a caption for a <fieldset> element.
+
+  <select>	=> Defines a drop-down list.
+  <option>	=> Defines an option in a drop-down list.(The <option> tags inside <select> element define the available options in the drop-down list).(selected attribute)
+  <optgroup>	=> Defines a group of related options in a drop-down list.
+
+  <datalist>	=> Specifies a list of pre-defined options for input controls.
+
+-The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users will see a drop-down list of pre-defined options as they input data.
+
+-The <datalist> element's id attribute must be equal to the <input> element's list attribute (this   binds them together).
+
+The <select> element defines a drop-down list:
+
+The <option> element defines an option that can be selected.
+
+By default, the first item in the drop-down list is selected.
+
+To define a pre-selected option, add the selected attribute to the option:
+
+Use the multiple attribute to allow the user to select more than one value:
+
+Use the size attribute to specify the number of visible values:
+  
+
+Form attributes:
+----------------
+
+-autocomplete: 'on' (in form opening tag).
+-novalidate => form-data (input) should not be validated when submitted.
+-onSubmit: form data will be submited when click on submit button.
+
+
+Input element Attributes
+------------------------
+
+  Input element attributes
+  ------------------------
+  1.type: text | password | email | button | radio | checkbox | number | color | date | reset | submit | tel | range | time | month
+ 
+    The type attribute is used to specify the type of the input element. Its default value is text.
+
+  2.placeholder: Placeholder attribute is used to specify hint that describes the expected value of an input field.
+  3.value:       The value attribute is used to specify the value of the input element.
+  4.name:        The name attribute is used to specify the name of the input element.
+  5.maxlength:   This property is used to specifies the maximum number of characters allowed in an <input> element
+  6.size:        This property is used to specifies the width of <input> element(default 20 chars)
+  
+  7.required:    The required attribute specifies that an input field must be filled out before submitting the form.
+  8.disabled:    The disabled attribute specifies that the element should be disabled. The disabled attribute can be set to keep a user from using the < input > element until some other condition has been fulfilled.
+  9.readonly:    The readonly attribute specifies that an input field is read-only. A read-only input field cannot be modified. A form will still submit an input field that is readonly, but will not submit an input field that is disabled.
+
+
+
+
+   
+Note:
+-----
+
+- The default width of an input field is 20 characters.
+- The "for" attribute of the <label> tag should be equal to the "id" attribute of the <input> element to    bind them together.
+- Name attribute should be same value for all radio buttons to select any one of them.
+- The <input type="submit"> defines button for submitting the form data to form-handler(function).
+
+
+
+16) marquee element
+    ===============
+
+The <marquee> tag is a container for creating scrollable text or images within a web page from either left to right or vice versa, or top to bottom or vice versa. But this tag has been deprecated in the new version of HTML, i.e., HTML 5
+
+  Attributes
+  ----------
+  width
+  height
+  direction : left (default right to left) | right | up | down
+  behaviour : slide | scrolling (defalut) | alternate
+  scrolldelay : default 85 (to make slow)
+  scrollamount : default 6 (to make speed)
+  bgcolor
+  loop : times of loop (The default value of loop is INFINITE)
+
+                 
+
+17) symantic elements (HTML-5)
+    ==========================
+
+Semantic elements = elements with a meaning.
+
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
+  <table>       :  Defines table.
+  <form>        :  Defines form.
+
+  <details>     :  Defines additional details that the user can view or hide.
+  <summary>     :  Defines a visible heading for a <details> element.
+                   The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.
+                   The <summary> element should be the first child element of the <details> element.
+
+  <header>      :  Defines a header for a document or section.
+  <nav>         :  Defines navigation links (nav contains <a> tag).
+  <footer>      :  Defines a footer for a document or section.
+
+  <main>        :  Specifies the main content of a document.
+  <section>     :  The <section> element defines a section in a document.
+  <article>     :  Defines an article. Examples of where the <article> element can be used.
+                   (Forum posts, Blog posts, User comments, Product cards, Newspaper articles)
+
+  <aside>	:  Defines content aside from the page content. The <aside> content should be indirectly related to the surrounding main content.
+  
+  <figure>      :  Use a <figure> element to mark up a photo in a document, and a <figcaption> element to define a caption for the photo. 
+                   Specifies self-contained content, like illustrations, diagrams, photos etc.
+                   
+  <figcaption>  :  Defines a caption for a <figure> element.
+
+
+
+
+
+
+18) iframe
+    ======
+
+The iframe in HTML stands for Inline Frame.
+
+ - Use the <iframe> tag to embed another document within the current HTML document.
+ - The HTML iframe "name" attribute is used to specify a reference for an <Iframe> element.
+ - The iframe is basically used to show a webpage inside the current web page. 
+ - The "src" attribute is used to specify the URL of the document that occupies the iframe.
+
+   Attributes
+   ----------
+   src
+   width
+   height
+   name
+   frameborder
+
+-An iframe can be used as the target frame for a link. The target attribute of the link must refer to   the name attribute of the iframe.
+-Bydefault iframe has border, we can remove border by using css also.
+
+
+19) Media Elements (HTML-5)
+    ==============
+
+ - HTML5 introduces media elements like <audio> and <video> for displaying and playing audio and video content.
+ - The <video> tag is used to embed video content in a document, such as some videos. 
+ - The <audio> tag is used to embed sound content in a document, such as some audios.
+   
+   <audio controls autoplay muted loop>
+
+     <source src="">
+   
+   </audio>
+
+   <video width="320" height="240" controls autoplay muted loop>
+
+     <source src=""> 
+     
+   </video>
+
+   Attributes
+   ----------
+   width
+   height
+   controls
+   autoplay
+   muted
+   loop
+   poster
+   
+
+ - The <source> element allows you to specify alternative audio files.
+ - controls: attribute adds audio controls, like play, pause, and volume.
+ - autoplay: it will work with muted for videos.
+ - loop: Specifies that the video will start over again, every time it is finished.
+ - muted: Specifies that the audio output of the video should be muted.
+ - poster: Specifies an image to be shown while the video is downloading, or until the user hits the play button.
+
+
+20) Web storage (HTML-5)
+    ===========
+
+   => Local storage
+
+   => Session storage
+
+With web storage, web applications can store data locally within the user's browser.
+
+Before HTML5, application data had to be stored in cookies, included in every server request. 
+Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+
+Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
+
+It is used to store data on the client side. It has no expiration time, so the data in the LocalStorage exists always till the user manually deletes it.
+
+HTML web storage provides two objects for storing data on the client:
+
+window.localStorage - stores data with no expiration date
+window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)
+
+=> Store
+
+   localStorage.setItem("name", "Hari");
+
+=> Retrieve
+
+   document.getElementById("result").innerHTML = localStorage.getItem("name");
+
+=> remove
+
+   localStorage.removeItem('name')
+
+   localStorage.clear()
+
+
+
+22. Block-level vs Inline
+    ---------------------
+
+Block 
+-----
+
+<address>
+<article>
+<aside>
+<blockquote>
+<canvas>
+<dd>
+<div>
+<dl>
+<dt>
+<fieldset>
+<figcaption>
+<figure>
+<footer>
+<form>
+<h1>-<h6>
+<header>
+<hr>
+<li>
+<main>
+<nav>
+<noscript>
+<ol>
+<p>
+<pre>
+<section>
+<table>
+<tfoot>
+<ul>
+<video>
+
+
+Inline
+------
+
+<a>
+<abbr>
+<acronym>
+<b>
+<bdo>
+<big>
+<br>
+<button>
+<cite>
+<code>
+<dfn>
+<em>
+<i>
+<img>
+<input>
+<kbd>
+<label>
+<map>
+<object>
+<output>
+<q>
+<samp>
+<script>
+<select>
+<small>
+<span>
+<strong>
+<sub>
+<sup>
+<textarea>
+<time>
+<tt>
+<var>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
